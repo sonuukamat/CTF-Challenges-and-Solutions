@@ -1,0 +1,5 @@
+# Use Burp Suite to intercept a request and modify a parameter to include a potential XSS payload
+http://example.com/search.php?q=<script>alert('XSS')</script>
+
+# Observe the response in Burp Suite to see if the script executes
+
